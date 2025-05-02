@@ -61,17 +61,6 @@ Or automatically:
 echo "Automatic Test" | ncat 127.0.0.1 9000
 ```
 
-## Code structure
-
-```
-cmd/
-main.go # Entry point, initialize gnet.Run
-internal/
-handler.go # Define MyEventHandler (OnBoot, OnOpen, ...)
-go.mod
-go.sum
-```
-
 ## Customization
 
 * Change port: edit `"tcp://0.0.0.0:9000"` in `gnet.Run`
