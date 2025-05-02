@@ -20,22 +20,18 @@ This is a basic **echo-server** running on TCP port 9000, built with Go and the 
 1. Initialize the module:
 
 ```bash
-go mod init github.com/your_username/echoserver
+go mod init gnet-server-test
 ```
 2. Load dependencies:
 
 ```bash
-go get github.com/panjf2000/gnet/v2
 go mod tidy
 ```
 ## How to run
 
 ```bash
 # Compile
-go build -o echoserver main.go
-
-# Run
-./echoserver
+go run main.go
 
 ```
 
